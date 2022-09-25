@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <title>그리드에 대해 알아보자</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="a.css">
+  <style>
+    #grid{
+      border:3px pink solid;
+      margin:0;
+      display:grid;
+      grid-template-columns:150px 1fr;
+    }
+    #grid #q{
+      border-right:3px pink solid;
+      margin:0;
+    }
+  </style>
+</head>
+
+
+<body>
+  <h1><a href="index.html" title="메인" style="color:green;">new start</a></h1>
+  <div id="a">
+  <ol>
+    <li><a href="계획.html" title="계획">계획(변경가능)</a></li>
+    <li><a href="공부.html" title="공부">공부모아보기</a></li>
+    <li><a href="박스.html" title="공부(박스모델)">공부(박스)</a></li>
+    <li><a href="그리드.html" title="공부(그리드)">공부(그리드)</a></li>
+    <li><a href="미디어쿼리.html" title="공부(미디어)">공부(미디어)</a></li>
+    <li><a href="조건문.html" title="공부(조건문)">공부(조건문)</a></li>
+    <li><a href="휴식.html" title="휴식">휴식(게임)</a></li>
+  </ol>
+  <div id="b">
+  <div id="grid">
+    <div id="q">그리드 왼쪽</div>
+    <div>article
+      <h4>grid 사용법</h4>
+      <p>div, span의 tag같은 경우는 디자인을 위한 아무 의미가 없는 tag<br>
+         div tag는 화면 전체를 쓰는 block<br>
+         span tag는 자기 크기만 쓰는 inline<br>
+         div또는 span으로 그룹을 묶어준 후 사용<br>
+         ex)<br>
+         grid{<br>
+           display:grid;<br>
+           grid-template-columns:150px 2fr;<br>
+           (행,열에 따라 바꿔 사용가능,묶어준 그룹에 따라 순서대로 크기 지정)<br>
+              }</p>
+      <p>id는 tag값의 이름을 정함<br>
+      사용시 #으로 구분<br>
+      grid를 사용한경우 왠만하면 style속성 값에 #grid를 넣어주기<br>
+      </p>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>

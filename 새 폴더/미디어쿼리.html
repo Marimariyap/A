@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>미디어쿼리에 대해 알아보자</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="a.css">
+    <style>
+      @media(min-width:800px) {
+        #c {
+          display:none;
+        }
+        #d {
+          border:5px solid blue;
+          font-size:45px;
+        }
+      }
+    </style>
+  </head>
+
+
+  <body><h1><a href="index.html" title="메인" style="color:green;">new start</a></h1>
+  <div id="a">
+  <ol>
+    <li><a href="계획.html" title="계획">계획(변경가능)</a></li>
+    <li><a href="공부.html" title="공부">공부모아보기</a></li>
+    <li><a href="박스.html" title="공부(박스모델)">공부(박스)</a></li>
+    <li><a href="그리드.html" title="공부(그리드)">공부(그리드)</a></li>
+    <li><a href="미디어쿼리.html" title="공부(미디어)">공부(미디어)</a></li>
+    <li><a href="조건문.html" title="공부(조건문)">공부(조건문)</a></li>
+    <li><a href="휴식.html" title="휴식">휴식(게임)</a></li>
+  </ol>
+  <div id="b">
+    <div id="c">
+      resoinsive
+      </div>
+    <h2>미디어쿼리</h2>
+    <div id="d">
+    <p>다양한 화면을 위한 웹의 적응이 필요함에 따라 사용함<br>
+       screen > 800 : min - 800<br>
+       screen < 800 : max - 800<br>
+       style칸에 @media를 사용하여 screen > 800 : min - 800일 경우<br>
+       @media(min-width:800px)를 통해서 사용가능</p>
+    </div>
+  </div>
+</div>
+  </body>
+</html>

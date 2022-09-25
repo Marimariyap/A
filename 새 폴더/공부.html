@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+  <title>공부 모아보기</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="a.css">
+  <style>
+    h4 {
+      color:blue;
+    }
+  </style>
+</head>
+
+
+<body>
+  <h1><a href="index.html" title="메인" style="color:green;">new start</a></h1>
+  <div id="a">
+  <ol>
+    <li><a href="계획.html" title="계획">계획(변경가능)</a></li>
+    <li><a href="공부.html" title="공부">공부모아보기</a></li>
+    <li><a href="박스.html" title="공부(박스모델)">공부(박스)</a></li>
+    <li><a href="그리드.html" title="공부(그리드)">공부(그리드)</a></li>
+    <li><a href="미디어쿼리.html" title="공부(미디어)">공부(미디어)</a></li>
+    <li><a href="조건문.html" title="공부(조건문)">공부(조건문)</a></li>
+    <li><a href="휴식.html" title="휴식">휴식(게임)</a></li>
+  </ol>
+  <div id="b">
+  <h2 style="color:green;">한번 시작해 봅시다!</h2>
+
+  <h4>tag 배우기</h4>
+  <strong>글씨 굵게(strong)</strong>, <u>밑줄</u>
+  <h2>tag에 대한 검색(html h1 tag)으로 알아내는 방법 배우기</h2>
+  <h6>tag에 대한 검색(html h1 tag)으로 알아내는 방법 배우기</h6>
+  <p>통계로 통한 학습법 https://www.advancedwebranking.com/html/</p>
+
+  <h4>줄바꿈 tag(html new line tag)</h4>
+  줄바꿈 tag 중 (br)은 여러번 쓸 경우 단락 나누기 가능<br><br>
+  상당히 자주 쓰는 tag<br>
+  *특이점 h1~h6 tag는 open tag, close tag 존재 하지만 줄바꿈 tag는 시각적 표현이어서 감쌀 필요 없음
+  단락 검색(html paragraph tag)<br>
+  <p>단락 tag는 어디서 부터 어디까지가 한 단락을 표현해야 하는만큼 닫아줘야함</p>
+
+  <h4>속성 tag 알아보기(사진img) s o u r c e -> src</h4>
+  이미지 (unsplash.com)사이트
+  <img src="plan.jpg" width="100%">
+  src="plan.jpg" width="100%" -> 속성, 영어로 attribute, 위치 노상관
+
+  <h4>부모자식 tag과 목록(li와 ul)</h4>
+  <p>경계 및 그룹핑을 하기위한 부모(ul)unordred list자식(li)list tag임<br>
+  자동 넘버링(ol)ordered list</p>
+  <ul>
+    <li>쉔</li>
+    <li>벡스</li>
+    <li>진</li>
+  </ul>
+
+  <h4>문서의 구조</h4>
+  <p>**웹페이지 이름(title)<br>
+  작성된 문자와 표시된 문자가 다른경우(utf-8)<br>
+  본문(body), 본문을 설명하는 tag(head)사람사이의 약속, 이보다 더 큰것으로(html)로 묶는다<br>
+  html tag위에 관용적으로 !doctype html쓰기</p>
+
+  <h4>링크(젤다 아님)(a)</h4>
+  <a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="html사용설명서">검색(html specification)설명서</a>
+  href="https://www(링크 속성), target="_blank"(클릭시 새탭 속성), title="html사용설명서"(클릭 전 정보 확인 속성)
+
+  <h4>CSS</h4>
+  <p>사용법(style)<br>
+  index 파일 (style) 부분 확인</p>
+  <p>ex)<br> (style)<br>
+  a {<br>
+    color:black;<br>
+    text-decoration:none;<br>
+  }<br>
+  (/style)일 경우 해당 html (a href="#")(/a)에 대한 모든 코드들이 red로 바뀜</p>
+  css를 지배하는 중요한 규칙중 '선택자'와 '속성'<br>
+  속성을 많이 알수록 표현력 up<br>
+  선택자를 많이 알수록 속성을 정확히 표현<br>
+  .class, #id<br>
+
+  <h4>박스모델</h4>
+  <p>화면 전체를 쓰는 것을 block level element,
+     자기 크기만 쓰는 것을 inline element 이라고함<br>
+     콘텐츠의 크기 지정(width-폭, height-높이)<br>
+     (/**/은 주석)<br>
+     (,)하나로 중복되는 css코드를 획기적으로 단번에 줄여줌<br>
+     <img src="boxmodel.jpg" width="30%">
+     속성의 종류 사진참조</p>
+     콘텐츠와 테두리사이의 간격은 padding<br>
+     테두리와 테두리사이의 간격은 margin<br>
+     테두리는 border<br>
+  <p>웹페이지 우클릭 후 검사항목 선택시 어떠한 css값을 받는지 알 수 있음<br>
+     분석하며 사용가능 한 도구 !! (개발자 도구)</p>
+
+  <h4>grid 사용법</h4>
+  <p>div, span의 tag같은 경우는 디자인을 위한 아무 의미가 없는 tag<br>
+     div tag는 화면 전체를 쓰는 block<br>
+     span tag는 자기 크기만 쓰는 inline<br>
+     div또는 span으로 그룹을 묶어준 후 사용<br>
+     ex)<br>
+     grid{<br>
+       display:grid;<br>
+       grid-template-columns:150px 2fr;<br>
+       (행,열에 따라 바꿔 사용가능,묶어준 그룹에 따라 순서대로 크기 지정)<br>
+          }</p>
+  <p>id는 tag값의 이름을 정함<br>
+  사용시 #으로 구분<br>
+  grid를 사용한경우 왠만하면 style속성 값에 #grid를 넣어주기<br>
+  </p>
+
+  <h4>mediaquery 사용법</h4>
+  <p>다양한 화면을 위한 웹의 적응이 필요함에 따라 사용함<br>
+     screen > 800 : min - 800<br>
+     screen < 800 : max - 800<br>
+     style칸에 @media를 사용하여 screen > 800 : min - 800일 경우<br>
+     @media(min-width:800px)를 통해서 사용가능</p>
+
+  <h4>코드의 재사용</h4>
+  <p>지금 index.html에 있는 코드를 다른 파일에 적용시켜보자<br>
+     똑같이 복사해서 코드를 고쳐나가면 됨<br>
+     하지만 중복이 너무 많아 간결하게 표현하고 싶을땐 스타일 tag 빼고
+     스타일 칸에 있는 코드를 복사해 다른 파일(예시 / a.css)로 옮긴 후
+     link라는 tag를 통해 사용가능<br>
+     ex)<br>
+     (link rel="stylesheet" href="a.css")<br>
+     a.css파일에 있는 코드를 스타일 tag로 링크를 걸어줌<br>
+     이후 수정이 필요할 경우 a.css파일을 수정하면 링크를 걸어논 파일이 수정됨<br>
+     </p>
+
+  <h4>자바스크립트 script</h4>
+  <p>사용자와 상호작용을 하는 언어, 웹브라우저는 한번 출력되면 되돌릴수 없다<br>
+     html을 제어하는 언어<br>
+     document.write(자바스크립트로 웹페이지에 글씨를 출력할 때 사용)<br></p>
+
+  <h4>데이터 타입<h4>
+  <p>검사창에서 콘솔 클릭후 확인 가능<br>
+    number(숫자), tring(문자, 문자열)<br>
+     숫자 데이터 타입에서 중요한 것 산술연산자(+-*/)<br>
+     문자, 문자열 데이터 타입에서 중요한 것 "(')로시작해서 "(')로 끝난다
+     문자열 뒤에 .length는 글자의 갯수 등 많음 검색(JavaScript string)<br>
+     변수(ex.x), 상수(ex.1)와 대입연산자(ex.=)<br>
+     변수 ex)<br>
+     var name = "kim";일경우 바뀌는 문자열에 "+name+"을 대신 사용할 경우 "kim"으로 바뀜<br>
+     </p>
+
+  <h4>조건문(if), 반복문</h4>
+  <p>comparison operator(비교 연산자===) & boolean<br>
+     ex)1===1일 경우 true 1===2일 경우 false<br>
+     html에서 부등호는 사용할 수 없으므로 다른 특수 코드 값을 씀<br>
+     &lt;(오른쪽 부등호), &gt;(왼쪽 부등호)<br>
+     비교연산자를 통해 만들어지는 값은 true & false중 한가지이고<br>
+     이 두가지를 묶어서 Boolean이라고 함<br></p>
+  <p>if - 조건문 페이지 확인</p>
+  <p>리팩토링<br>
+     코드의 가독성 up<br>
+     ex)onclick 안에서 실행되는 이벤트를 간결하게 this<br>
+     document.querySelector('#night day2').value->this.value<br>
+     ex)명령값을 간결하게 vartarget
+
+  </p>
+
+
+
+
+
+   </div>
+ </div>
+</body>
+</html>

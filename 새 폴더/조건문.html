@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+  <title>미디어쿼리에 대해 알아보자</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="a.css">
+</head>
+
+
+<body>
+  <input id="모드변경" type="button" value="야간" onclick="
+    if(document.querySelector('#모드변경').value === '야간') {
+      document.querySelector('body').style.backgroundColor = 'gray';
+      document.querySelector('body').style.color = 'white';
+      document.querySelector('#모드변경').value = '주간';
+    }
+    else {
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      document.querySelector('#모드변경').value = '야간';
+    }
+  ";>
+  <h1><a href="index.html" title="메인" style="color:green;">new start</a></h1>
+  <div id="a">
+  <ol>
+    <li><a href="계획.html" title="계획">계획(변경가능)</a></li>
+    <li><a href="공부.html" title="공부">공부모아보기</a></li>
+    <li><a href="박스.html" title="공부(박스모델)">공부(박스)</a></li>
+    <li><a href="그리드.html" title="공부(그리드)">공부(그리드)</a></li>
+    <li><a href="미디어쿼리.html" title="공부(미디어)">공부(미디어)</a></li>
+    <li><a href="조건문.html" title="공부(조건문)">공부(박스)</a></li>
+    <li><a href="휴식.html" title="휴식">휴식(게임)</a></li>
+  </ol>
+  <div id="b">
+  <h1 style="color:black; text-decoration:none;">comparison operator(비교 연산자===) & boolean</h1>
+    <p>ex)1===1일 경우 true 1===2일 경우 false<br>
+     html에서 부등호는 사용할 수 없으므로 다른 특수 코드 값을 씀<br>
+     &lt;(오른쪽 부등호), &gt;(왼쪽 부등호)<br>
+     비교연산자를 통해 만들어지는 값은 true & false중 한가지이고<br>
+     이 두가지를 묶어서 Boolean이라고 함<br></p>
+
+  <h1 style="color:black; text-decoration:none;">conditional statements(조건문)</h1>
+
+  <h2>if</h2>
+  <script>
+    document.write("1<br>");
+    document.write("2<br>");
+    document.write("3<br>");
+    document.write("4<br>");
+  </script>
+
+  <h2>if-true</h2>
+  <script>
+    document.write("1<br>");
+    if (true) {
+    document.write("2<br>");
+    }
+    else {
+    document.write("3<br>");
+    }
+    document.write("4<br>");
+  </script>
+
+  <h2>if-false</h2>
+  <script>
+    document.write("1<br>");
+    if (false) {
+    document.write("2<br>");
+    }
+    else {
+    document.write("3<br>");
+    }
+    document.write("4<br>");
+  </script>
+
+
+
+  <h1 style="color:black; text-decoration:none;">comparison operator(비교 연산자===) & boolean</h1>
+
+  <h2>===</h2>
+
+  <h3>1===1</h3>
+  <script>
+    document.write(1===1);
+  </script>
+
+  <h3>1===2</h3>
+  <script>
+    document.write(1===2);
+  </script>
+
+  <h3>1&lt;2</h3>
+  <script>
+    document.write(1<2);
+  </script>
+
+  <h3>1&lt;1</h3>
+  <script>
+    document.write(1<1);
+  </script>
+
+  <h3>1&gt;2</h3>
+  <script>
+    document.write(1>2);
+  </script>
+  </div>
+</div>
+<input type="button" value="야간" onclick="
+  var target = document.querySelector('body');
+  if(this.value === '야간') {
+    target.style.backgroundColor = 'gray';
+    target.style.color = 'white';
+    this.value = '주간';
+  }
+  else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = '야간';
+  }
+";>
+</body>
+</html>

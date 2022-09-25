@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <title>박스모델에 대해 알아보자</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="a.css">
+  <style>
+  /*
+  block level element
+  */
+  h2 {
+    border:5px brown solid;
+    padding:5px;
+    margin:5px;
+    display:block;
+    width:110px;
+    height:110px;
+  }
+  </style>
+</head>
+
+
+<body>
+  <h1><a href="index.html" title="메인" style="color:green;">new start</a></h1>
+  <div id="a">
+  <ol>
+    <li><a href="계획.html" title="계획">계획(변경가능)</a></li>
+    <li><a href="공부.html" title="공부">공부모아보기</a></li>
+    <li><a href="박스.html" title="공부(박스모델)">공부(박스)</a></li>
+    <li><a href="그리드.html" title="공부(그리드)">공부(그리드)</a></li>
+    <li><a href="미디어쿼리.html" title="공부(미디어)">공부(미디어)</a></li>
+    <li><a href="조건문.html" title="공부(조건문)">공부(조건문)</a></li>
+    <li><a href="휴식.html" title="휴식">휴식(게임)</a></li>
+  </ol>
+  <div id="b">
+  <h2>박스 모델</h2>
+  <h2>박스 모델</h2>
+  <p>화면 전체를 쓰는 것을 block level element,
+     자기 크기만 쓰는 것을 inline element 이라고함<br>
+     콘텐츠의 크기 지정(width-폭, height-높이)<br>
+     (/**/은 주석)<br>
+     (,)하나로 중복되는 css코드를 획기적으로 단번에 줄여줌<br>
+     <img src="boxmodel.jpg" width="30%">
+     속성의 종류 사진참조</p>
+     콘텐츠와 테두리사이의 간격은 padding<br>
+     테두리와 테두리사이의 간격은 margin<br>
+     테두리는 border<br>
+  <p>웹페이지 우클릭 후 검사항목 선택시 어떠한 css값을 받는지 알 수 있음<br>
+     분석하며 사용가능 한 도구 !! (개발자 도구)</p>
+   </div>
+ </div>
+</body>
+</html>

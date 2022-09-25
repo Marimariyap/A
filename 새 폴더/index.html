@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <title>적성에 맞는지 찍먹해보자!</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="a.css">
+</head>
+
+
+<body>
+  <h1>new start</h1>
+  <div id="a">
+  <ol>
+    <li><a href="계획.html" title="계획">계획(변경가능)</a></li>
+    <li><a href="공부.html" title="공부">공부모아보기</a></li>
+    <li><a href="박스.html" title="공부(박스모델)">공부(박스)</a></li>
+    <li><a href="그리드.html" title="공부(그리드)">공부(그리드)</a></li>
+    <li><a href="미디어쿼리.html" title="공부(미디어)">공부(미디어)</a></li>
+    <li><a href="휴식.html" title="휴식">휴식(게임)</a></li>
+  </ol>
+  <div id="b">
+  <h2>이유(추가될 수 있음)</h2>
+  <ul>
+    <li>내 주변은 앞으로 나아가지만 <strong>혼자 서있는 느낌</strong></li>
+    <li>이번엔 겁내지 않고 <strong>도전</strong>해보고 싶어서</li>
+    <li>드디어 내가 하고 싶은 일이 생겨서</li>
+  </ul>
+  </div>
+</div>
+
+<input type="button" value="야간" onclick="
+  var target = document.querySelector('body');
+  if(this.value === '야간') {
+    target.style.backgroundColor = 'gray';
+    target.style.color = 'white';
+    this.value = '주간';
+
+    var ch  = document.querySelectorAll('a');
+    var i = 0;
+    while(i<ch.length){
+      ch[i].style.color = 'powderblue';
+      i = i + 1;
+    }
+  }
+  else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = '야간';
+
+    var ch  = document.querySelectorAll('a');
+    var i = 0;
+    while(i<ch.length){
+      ch[i].style.color = 'brown';
+      i = i + 1;
+    }
+  }
+";>
+</body>
+</html>
